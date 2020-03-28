@@ -22,6 +22,7 @@ import { Marker } from "./marker";
 import { MVCObject } from "./mvcobject";
 import { Point } from "./point";
 import { Size } from "./size";
+import { InfoWindow } from "./infowindow";
 
 const initialize = function(): void {
   (global as any).google = {
@@ -34,6 +35,7 @@ const initialize = function(): void {
       MVCObject: MVCObject,
       LatLng: LatLng,
       LatLngBounds: LatLngBounds,
+      InfoWindow: InfoWindow,
       event: {
         addListener: jest.fn(),
         addListenerOnce: jest.fn(),
@@ -55,5 +57,6 @@ export {
   MVCObject,
   LatLng,
   LatLngBounds,
+  InfoWindow,
   initialize
 };
