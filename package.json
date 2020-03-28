@@ -8,13 +8,13 @@
     "maps",
     "markers"
   ],
-  "homepage": "https://github.com/googlemaps/v3-utility-library/tree/master/packages/jest-mocks",
+  "homepage": "https://github.com/EnzoRobaina/v3-utility-library/tree/master/packages/jest-mocks",
   "bugs": {
-    "url": "https://github.com/googlemaps/v3-utility-library/issues"
+    "url": "https://github.com/EnzoRobaina/v3-utility-library/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/googlemaps/v3-utility-library.git"
+    "url": "https://github.com/EnzoRobaina/v3-utility-library.git"
   },
   "license": "Apache-2.0",
   "author": "Justin Poehnelt",
