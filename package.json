@@ -1,5 +1,5 @@
 {
-  "name": "@googlemaps/jest-mocks",
+  "name": "@enzorobaina/jest-mocks",
   "version": "0.0.3",
   "description": "Mocks for jest and Google Maps.",
   "keywords": [
