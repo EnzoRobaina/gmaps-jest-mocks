@@ -27,6 +27,8 @@ export class Map_ extends MVCObject implements google.maps.Map {
   constructor(mapDiv: Element | null, opts?: google.maps.MapOptions) {
     super();
   }
+
+  getClickableIcons = jest.fn().mockImplementation((): boolean => true);
   fitBounds = jest
     .fn()
     .mockImplementation(
