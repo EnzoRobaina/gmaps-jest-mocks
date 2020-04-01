@@ -11,7 +11,7 @@ export class MVCArray<T> extends MVCObject {
     .fn()
     .mockImplementation((callback: (arg0: T, arg1: number) => any) => {});
 
-  getArray = jest.fn().mockImplementation((): Array<T> | null => null);
+  getArray = jest.fn().mockImplementation((): Array<T> | null => []);
 
   getAt = jest.fn().mockImplementation((i: number): T | null => null);
 
