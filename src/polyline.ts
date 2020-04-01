@@ -1,5 +1,6 @@
-import { MVCObject } from "./index";
+import { MVCObject, LatLng } from "./index";
 import { PolylineOptions } from "./polylineoptions";
+import { MVCArray } from "./mvcarray";
 
 export class Polyline extends MVCObject {
   constructor(opts?: PolylineOptions) {
@@ -14,7 +15,7 @@ export class Polyline extends MVCObject {
     .fn()
     .mockImplementation((): google.maps.Map | null | undefined => null);
 
-  getPath = jest.fn().mockImplementation((): [] | null => null);
+  getPath = jest.fn().mockImplementation((): MVCArray<LatLng> | null => new MVCArray([]));
 
   getVisible = jest.fn().mockImplementation((): boolean => true);
 
@@ -26,7 +27,7 @@ export class Polyline extends MVCObject {
 
   setOptions = jest.fn().mockImplementation((options: PolylineOptions) => {});
 
-  setPath = jest.fn().mockImplementation((path: []) => {});
+  setPath = jest.fn().mockImplementation((path: MVCArray<LatLng>) => {});
 
   setVisible = jest.fn().mockImplementation((visible: boolean) => {});
 }
