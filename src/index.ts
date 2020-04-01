@@ -23,7 +23,8 @@ import { MVCObject } from "./mvcobject";
 import { Point } from "./point";
 import { Size } from "./size";
 import { InfoWindow } from "./infowindow";
-import { Polyline } from "./polyline"
+import { Polyline } from "./polyline";
+import { MVCArray } from "./mvcarray";
 
 const initialize = function(): void {
   (global as any).google = {
@@ -34,6 +35,7 @@ const initialize = function(): void {
       Point: Point,
       Size: Size,
       MVCObject: MVCObject,
+      MVCArray: MVCArray,
       LatLng: LatLng,
       LatLngBounds: LatLngBounds,
       InfoWindow: InfoWindow,
@@ -57,6 +59,7 @@ export {
   Map_ as Map,
   Size,
   MVCObject,
+  MVCArray,
   LatLng,
   LatLngBounds,
   InfoWindow,
