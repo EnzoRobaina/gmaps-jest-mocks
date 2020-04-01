@@ -23,6 +23,7 @@ import { MVCObject } from "./mvcobject";
 import { Point } from "./point";
 import { Size } from "./size";
 import { InfoWindow } from "./infowindow";
+import { Polyline } from "./polyline"
 
 const initialize = function(): void {
   (global as any).google = {
@@ -36,6 +37,7 @@ const initialize = function(): void {
       LatLng: LatLng,
       LatLngBounds: LatLngBounds,
       InfoWindow: InfoWindow,
+      Polyline: Polyline,
       event: {
         addListener: jest.fn(),
         addListenerOnce: jest.fn(),
@@ -58,5 +60,6 @@ export {
   LatLng,
   LatLngBounds,
   InfoWindow,
+  Polyline,
   initialize
 };
