@@ -15,7 +15,9 @@ export class Polyline extends MVCObject {
     .fn()
     .mockImplementation((): google.maps.Map | null | undefined => null);
 
-  getPath = jest.fn().mockImplementation((): MVCArray<LatLng> | null => new MVCArray([]));
+  getPath = jest
+    .fn()
+    .mockImplementation((): MVCArray<LatLng> | null => new MVCArray([]));
 
   getVisible = jest.fn().mockImplementation((): boolean => true);
 
