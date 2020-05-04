@@ -1,6 +1,6 @@
 {
   "name": "@enzorobaina/jest-mocks",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mocks for jest and Google Maps.",
   "keywords": [
     "google",
@@ -27,10 +27,6 @@
     "lint": "eslint src/*",
     "prepare": "rollup -c",
     "test": "jest"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://wombat-dressing-room.appspot.com"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.7.6",
@@ -61,5 +57,9 @@
     "typedoc": "^0.15.0",
     "typedoc-plugin-lerna-packages": "^0.2.1",
     "typescript": "^3.7.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://wombat-dressing-room.appspot.com"
   }
 }
