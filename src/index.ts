@@ -25,6 +25,7 @@ import { Size } from "./size";
 import { InfoWindow } from "./infowindow";
 import { Polyline } from "./polyline";
 import { MVCArray } from "./mvcarray";
+import { ControlPosition } from "./controlposition";
 
 const initialize = function(): void {
   (global as any).google = {
@@ -40,6 +41,7 @@ const initialize = function(): void {
       LatLngBounds: LatLngBounds,
       InfoWindow: InfoWindow,
       Polyline: Polyline,
+      ControlPosition: ControlPosition,
       event: {
         addListener: jest.fn(),
         addListenerOnce: jest.fn(),
@@ -64,5 +66,6 @@ export {
   LatLngBounds,
   InfoWindow,
   Polyline,
+  ControlPosition,
   initialize
 };
