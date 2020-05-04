@@ -19,7 +19,22 @@ import { MVCObject } from "./mvcobject";
 
 // eslint-disable-next-line @typescript-eslint/class-name-casing
 export class Map_ extends MVCObject implements google.maps.Map {
-  controls: Array<google.maps.MVCArray<Node>>;
+  controls: Array<google.maps.MVCArray<Node>> = [
+    new google.maps.MVCArray<Node>(), // undefined
+    new google.maps.MVCArray<Node>(), // TOP_LEFT
+    new google.maps.MVCArray<Node>(), // TOP_CENTER
+    new google.maps.MVCArray<Node>(), // TOP_RIGHT
+    new google.maps.MVCArray<Node>(), // LEFT_CENTER
+    new google.maps.MVCArray<Node>(), // LEFT_TOP
+    new google.maps.MVCArray<Node>(), // LEFT_BOTTOM
+    new google.maps.MVCArray<Node>(), // RIGHT_TOP
+    new google.maps.MVCArray<Node>(), // RIGHT_CENTER
+    new google.maps.MVCArray<Node>(), // RIGHT_BOTTOM
+    new google.maps.MVCArray<Node>(), // BOTTOM_LEFT
+    new google.maps.MVCArray<Node>(), // BOTTOM_CENTER
+    new google.maps.MVCArray<Node>() // BOTTOM_RIGHT
+  ];
+
   data: google.maps.Data;
   mapTypes: google.maps.MapTypeRegistry;
   overlayMapTypes: google.maps.MVCArray<google.maps.MapType>;
