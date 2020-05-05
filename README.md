@@ -9,12 +9,12 @@ Jest mocks for Google Maps in TypeScript.
 
 ## NPM
 
-Available via NPM as the package `@googlemaps/jest-mocks`
+Available via NPM with `npm install https://github.com/EnzoRobaina/gmaps-jest-mocks/`
 
 ## Example
 
 ```typescript
-import { initialize } from "@googlemaps/jest-mocks";
+import { initialize } from "@enzorobaina/jest-mocks";
 
 beforeEach(() => {
   initialize();
@@ -22,12 +22,6 @@ beforeEach(() => {
 
 ```
 
-## Support
-
-This library is community supported. We're comfortable enough with the stability and features of
-the library that we want you to build real production applications on it.
-
-If you find a bug, or have a feature suggestion, please [log an issue][issues]. If you'd like to
-contribute, please read [How to Contribute][contrib].
-
-[issues]: https://github.com/googlemaps/v3-utility-library/issues
+## Credits
+All credits goes to the original author and repo
+https://github.com/googlemaps/v3-utility-library
