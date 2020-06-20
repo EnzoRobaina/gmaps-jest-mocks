@@ -23,5 +23,5 @@ beforeEach(() => {
 ```
 
 ## Credits
-All credits goes to the original author and repo
+All credits to the original author and repo
 https://github.com/googlemaps/v3-utility-library
